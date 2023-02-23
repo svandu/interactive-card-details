@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SpaceGrotesk", sans-serif;
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.first-part {
+    background-image: url(images/bg-main-desktop.png);
+    width: 30%;
+    height: 100vh;
+}
+
+.second-part {
+    width: 70%;
+    height: 100vh;
+}
+
+.front-card-image {
+    width: 400px;
+    margin: 10em 0 0 9em;
+}
+
+.back-card-image {
+    width: 400px;
+    margin: 2em 0 0 17em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 7em 25em;
+}
+
+label{
+    margin: 2em 0 0.4em 0;
+}
+
+input {
+    height: 35px;
+    border-radius: 5px;
+}
+
+.date {
+    margin-top: 2em;
+    display: flex;
+}
+
+.exp-date input {
+    width: 65px;
+    margin-top: 0.7em;
+}
+
+.cvc {
+    display: flex;
+    flex-direction: column;
+    margin: -2em 0 2em 3.2em;
+}
+
+button {
+    font-size: 18px;
+    padding: 0.7em;
+    text-transform: capitalize;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .first-part {
+        width: 100vw;
+        height: 100px;
+    }
+}
