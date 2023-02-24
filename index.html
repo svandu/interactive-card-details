@@ -13,8 +13,8 @@
 <body>
     <div class="main-container">
         <div class="first-part">
-            <img src="/images/bg-card-front.png" alt="font-card-image" class="front-card-image">
             <img src="/images/bg-card-back.png" alt="back-card-image" class="back-card-image">
+            <img src="/images/bg-card-front.png" alt="font-card-image" class="front-card-image">
         </div>
         <div class="second-part">
             <form action="#">
@@ -26,13 +26,13 @@
                     <div class="exp-date-label">
                         <label for="date" class="card-date">exp date(mm-yy)</label>
                         <div class="exp-date">
-                            <input type="month" class="month-input" id="date" value="month" placeholder="MM" required>
-                            <input type="number" class="year-input" id="year" value="year" placeholder="YY" required>
+                            <input type="text" class="month-input" id="date" placeholder="MM" minlength="1" maxlength="9" required>
+                            <input type="text" class="year-input" id="year" placeholder="YY" minlength="4" maxlength="4" required>
                         </div>
                     </div>
                     <div class="cvc">
                         <label for="cvc" class="cvc-number">cvc</label>
-                        <input type="number" class="cvc-number-input" id="cvc" value="cvc-number" placeholder="e.g. 123" required>
+                        <input type="text" class="cvc-number-input" id="cvc" placeholder="e.g. 123" minlength="3" maxlength="3" required>
                     </div>
                 </div>
                 <button class="submit-btn">confirm</button>
