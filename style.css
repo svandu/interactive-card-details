@@ -81,12 +81,12 @@ button {
     .main-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .first-part {
         background: url(/images/bg-main-mobile.png);
         width: 100vw;
         height: 120px;
-        /* position: relative; */
     }
     .front-card-image {
         width: 45%; 
@@ -97,5 +97,43 @@ button {
         left: 105px;
         top: 30px;
         width: 45%;
+    }
+    .second-part {
+        width: 80%;
+        border: 1px solid red;
+        font-size: 0.8rem;
+    }
+    form {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2em;
+    }
+    label {
+        width: 150px;
+        height: 20px;
+        font-size: 1rem;
+    }
+    input {
+        height: 30px;
+        width: 200%;
+    }
+    .date {
+        flex-direction: row;
+    }
+    .exp-date input{
+        width: 25%;
+        flex-direction: column;
+    }
+    .card-date {
+        height: 55%;
+    }
+    .cvc {
+        width: 25%;
+        margin-left: 8em;
+    }
+    button {
+        padding: 0.5em;
+        font-size: 1rem;
     }
 }
