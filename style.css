@@ -113,12 +113,11 @@ button {
     }
     .second-part {
         width: 90%;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
     form {
         width: 100%;
         padding: 1em;
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         margin: 6em 0 0 0 ;
@@ -134,7 +133,7 @@ button {
         flex-direction: row;
     }
     .exp-date input{
-        flex-direction: column;
+        width: 20%;
     }
     .card-date {
         height: 55%;
