@@ -22,13 +22,13 @@
                     <label for="name" class="holder-name">cardholder name</label>
                     <input type="text" class="name-input" id="name" placeholder="e.g. Jane Appleseed" required>
                     <label for="number" class="card-number">card number</label>
-                    <input type="number" class="card-number-input" id="number" value="card-number" placeholder="eg: 1234 5678 9123 0000" required>
+                    <input type="text" class="card-number-input" id="number"  minlength = "16" maxlength = "16" placeholder="eg: 1234 5678 9123 0000" required>
                     <div class="date">
                         <div class="exp-date-label">
                             <label for="date" class="card-date">exp date(mm-yy)</label>
                             <div class="exp-date">
-                                <input type="text" class="month-input" id="date" placeholder="MM" minlength="1" maxlength="2" required>
-                                <input type="text" class="year-input" id="year" placeholder="YY" min="11" max="99" required>
+                                <input type="number" class="month-input" id="date" placeholder="MM" min="1" max="12" required>
+                                <input type="text" class="year-input" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
                             </div>
                         </div>
                         <div class="cvc">
@@ -51,10 +51,22 @@
 
 <script>
     function submitForm() { 
-        document.getElementById("card_form").style.display = "none";
-        if(document.getElementById("card_form").style.display = "none"){
-            document.getElementById("completed").style.display = "block";
+        var name_input = document.getElementById("name").value;
+        var card_number = document.getElementById("number").value;
+        var card_month = document.getElementById("date").value;
+        var card_year = document.getElementById("year").value;
+        var cvc_number = document.getElementById("cvc").value;
+
+        // document.getElementById("card_form").style.display = "none";
+        if(name_input == "" || card_number == "" || card_month == "" || card_year == "" || cvc_number == ""){
+            document.getElementById("completed").style.display = "none";
+        } else {
+            document.getElementById("card_form").style.display = "none";
+           document.getElementById("completed").style.display = "block"; 
         }
+        // }else if(document.getElementById("card_form").style.display = "none"){
+        //     document.getElementById("completed").style.display = "block";
+        // }
     }
 </script>
 </html>
