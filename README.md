@@ -40,27 +40,18 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
-In this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- Vanilla Javascript 
+- Page Responsive
 
-To see how you can add code snippets, see below:
-In this section I had learned semantic html, how to make responsive and to javascript to submit the form and get real time answer.
+### Continued development
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- Continuing the use of javascript with frameworks.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more
+## Author
+
+- Website - [Surbhi](https://interactive-card-details-surbhi.vercel.app/)
+- Frontend Mentor - [@svandu](https://www.frontendmentor.io/profile/svandu)
+- Twitter - [@SurbhiVandana](https://twitter.com/SurbhiVandana)
