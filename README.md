@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live site URL: [live site](interactive-card-details-svandu.vercel.app)
+- Live site URL: [Live site](interactive-card-details-svandu.vercel.app)
 - Repo URL: [Repo Url](https://github.com/svandu/interactive-card-details)
 
 ## My process
