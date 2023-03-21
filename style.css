@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SpaceGrotesk", sans-serif;
     font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .main-container {
@@ -35,6 +35,34 @@ body {
     position: absolute;
 }
 
+.card-design {
+    top: -4em;
+    left: 14em;
+    width: 75%;
+    position: relative;
+}
+
+.img-cvc-no {
+    top: 26.3em;
+    left: 37em;
+    color: #fff;
+    position: absolute;
+}
+
+.img-card-no {
+    font-size: 1.8rem;
+    margin-top: 2em;
+    color: #fff;
+}
+
+.img-card-details {
+    margin-top: -1.5em;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 /* .card_form {
     display: none;
 } */
@@ -48,11 +76,15 @@ form {
 
 label {
     margin: 2em 0 0.4em 0;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
 input {
     height: 35px;
     border-radius: 5px;
+    padding: 0 1em;
 }
 
 .date {
@@ -68,7 +100,8 @@ input {
 .cvc {
     display: flex;
     flex-direction: column;
-    margin: -2em 0 2em 3.2em;
+    margin: -1em 0 2em 3.2em;
+    width: 34%;
 }
 
 #completed {

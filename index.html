@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-    </style>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
         <div class="first-part">
             <img src="/images/bg-card-back.png" alt="back-card-image" class="back-card-image">
+            <p class="img-cvc-no">000</p>
+            
             <img src="/images/bg-card-front.png" alt="font-card-image" class="front-card-image">
+            <div class="card-design">
+                <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+                <p class="img-card-no">9591 6489 6389 101E</p>
+                <div class="img-card-details">
+                    <p class="img-holder-name">felicia leire</p>
+                    <p class="img-card-date">09 /00</p>
+                </div>
+            </div>
         </div>
         <div class="second-part">
             <div class="card_form">
@@ -47,6 +59,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 
 <script>
@@ -62,8 +75,8 @@
             document.getElementById("completed").style.display = "none";
         } else {
             document.getElementById("card_form").style.display = "none";
-           document.getElementById("completed").style.display = "block"; 
-        }
+            document.getElementById("completed").style.display = "block"; 
+        }   
         // }else if(document.getElementById("card_form").style.display = "none"){
         //     document.getElementById("completed").style.display = "block";
         // }
